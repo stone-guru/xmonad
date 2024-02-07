@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -r ".xmonad/xmonad-session-rc" ]
+then
+  . .xmonad/xmonad-session-rc
+fi
+
+exec xmonad "$@"
+#exec .xmonad/xmonad-x86_64-linux "$@"

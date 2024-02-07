@@ -1,0 +1,16 @@
+#!/bin/sh
+xrandr --output DP-6 --mode 2560x1440 --pos 0x0 --rotate left \
+       --output DP-1 --primary --auto --pos 1440x298\
+       --output DP-4 --auto --pos 4000x658
+#       --output DP-6 --mode 1920x1080 --pos 4480x0 --rotate left      
+#xrandr --output VGA1 --left-of LVDS1 --auto
+#BG=/usr/share/backgrounds/gnome/Godafoss_Iceland.jpg
+#BG=$HOME/.xmonad/images/ocean-sunset-8.jpg
+IMAGE_DIR=$HOME/Pictures/night-sea
+feh --bg-fill $IMAGE_DIR/sea2.jpg --bg-fill $IMAGE_DIR/sea1.jpg --bg-fill $IMAGE_DIR/sea3.jpg
+#setxkbmap -layout us -option ctrl:nocaps        
+#xmodmap ~/etc/.xmodmap
+#echo xmonad-session-rc-executed $DISPLAY > /tmp/xmonad-session.log
+fcitx5&
+
+

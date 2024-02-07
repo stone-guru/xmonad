@@ -8,6 +8,7 @@ cabal-dev
 *.chs.h
 *.dyn_o
 *.dyn_hi
+*.lock
 .hpc
 .hsenv
 .cabal-sandbox/
@@ -16,8 +17,11 @@ cabal.sandbox.config
 *.aux
 *.hp
 *.eventlog
+*.errors
 .stack-work/
 cabal.project.local
 cabal.project.local~
 .HTF/
 .ghc.environment.*
+bin/
+xmonad-x86_64-linux
