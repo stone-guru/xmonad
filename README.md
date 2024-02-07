@@ -69,11 +69,11 @@
    set -e
    stack build :xmonad-exe --verbosity error
    stack install :xmonad-exe --local-bin-path bin/ --verbosity error
-   mv bin/my-xmonad "$1"
+   mv bin/xmonad-exe "$1"
    ```
    其中 `xmonad-exe`是项目里编译生成的程序名，在`package.yaml`中指定的。
    
- - `Main.hs`里面再安排上一个`reload`命令
+ - `xmonad.hs`里面再安排上一个`reload`命令
  
  ```haskell
  reloadXmonad = "xmonad --recompile; xmonad --restart; " ++
